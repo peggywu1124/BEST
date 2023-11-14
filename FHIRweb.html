@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Personal information</title>
+
+    <script src="FHIR.js"></script>
+</head>
+<body>
+    <h1>Personal information</h1>
+    <form id="personalInfoForm"></form>
+    姓名:<input type="text" id="name" required>
+    <br><br>
+    出生日期:<input type="date" id="birthDate" required>
+    <br><br>
+    性別:<input type="radio" name="gender" id="gender_male" value="male">男
+    <input type="radio" name="gender" id="gender_female" value="female">女
+    <br><br>
+    性別:<select>
+           <option>請選擇你(妳)的性別</option>
+           <option>男</option>
+           <option>女</option>
+    </select>
+    <br><br>
+    身分證字號:<input type="text" id="uid" required>
+    <br><br>
+    連絡電話（公）:<input type="text" id="phone_work" required>
+    <br><br>
+    連絡電話（宅）:<input type="text" id="phone_home" required>
+    <br><br> 
+    連絡電話（手機）:<input type="text" id="phone_mobile" required>
+    <br><br>
+    聯絡地址:<input type="text" id="address" required>
+    <br><br>
+    電子信箱:<input type="text" id="mail" required>
+    <br><br>
+    緊急聯絡人－姓名:<input type="text" id="contact_name" required>
+    <br><br>
+    緊急聯絡人－關係:<input type="text" id="contact_relationship" required>
+    <br><br>
+    緊急聯絡人－聯絡電話:<input type="text" id="contact_phone" required>
+    <br><br>
+    <button type="button" onclick="uploadFhirData()">送出</button>
+
+</form>
+
+</body>
+</html>
